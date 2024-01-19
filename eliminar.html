@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleE.css">
+    <title>Eliminar Productos</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="menu_horizontal">
+            <li>
+                <a href="#">Eliminar</a>
+                <ul class="menu_vertical">
+                    <li><a href="eliminar.html">Eliminar producto</a></li>
+                    <li><a href="eliminarU.html">Eliminar usuarios</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Agregar</a>
+                <ul class="menu_vertical">
+                    <li><a href="agregarP.html">Agregar producto</a></li>
+                    <li><a href="Registros.html">Agregar usuarios</a></li>
+                </ul>
+            </li>
+            <li><a href="salir.php">Salir</a></li>
+            <li><a href="bitacoras.php">Bitacoras</a></li>
+            <li><a href="logIn.html">LogIn</a></li>
+            <li><a href="Registros.html">Registros</a></li>
+            <li><a href="productosA.php">Productos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+          </ul>  
+        </nav>
+    </header>
+
+    <div class="login-box">
+        <h1>Eliminar Productos</h1>
+        <form action="http://localhost/postmortem/eliminar.php" method="post">
+            <label for="nombre"> Nombre del producto: </label>
+            <input type="text" name="nombre" id="nombre">
+
+            <button type="submit">ELIMINAR</button><br>
+
+        </form>
+    </div>
+    
+    <footer>
+        Josue Bonilla Cardenas | 4P <br> Desarrollo WEB | Base de datos
+    </footer>
+</body>
+</html>

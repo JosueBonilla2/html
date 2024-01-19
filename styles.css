@@ -1,0 +1,141 @@
+*{
+    background: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    bottom: 5em;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display:block;
+    font-size: 1em;
+    text-align: center;
+    color: #C69D04;
+    padding:1em 1em;
+    text-decoration: none;
+    background: black;
+    font-family:Arial;
+}
+
+li a:hover{
+    background-color:#C69D04;
+    color: black;
+}
+
+.carrito .c{
+    padding: 0;
+    margin: 1em;
+    float: right;
+    background: none;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+    color:black;
+    text-align: center;
+    background-color: #C69D04;
+}
+
+.index-box{
+    text-align: justify;
+    width: 35em;
+    height: 20em;
+    background: black;
+    color: #C69D04;
+    border-radius: .5em;
+    border-style: outset;
+    border-color: #C69D04;
+    box-sizing: border-box;
+    margin: 4em auto;
+}
+
+div h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin:.5em 1em;
+    background: local;
+    color: #5A5959;
+    font-size:1.5em;
+}
+
+div p{
+    margin-left: 1em;
+    margin-right: 1em;
+    background: local;
+    color: #5A5959;
+    font-size:1em;
+    font-family:serif;
+}
+
+div label{
+    color:#C69D04;
+    font-size: 1em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: white;
+    margin-top: 1em;
+    align-content: center;
+    box-shadow:#C69D04;
+}
+
+div input{
+    align-content: center;
+}
+
+label{
+    margin-left: 8em;
+    margin-top: 5em;
+}
+
+input{
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+form{
+    position: center;
+    margin: 10em;
+}
+
+button{
+    font-family: inherit;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    background: #C69D04;
+    border-color: #757472;
+    position: center;
+    padding: 1em 12em;
+    border-radius: 2em;
+    margin: 2em;
+}
+
+.imagen{
+    width: 100%;
+    height: 20em;
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    height: 3em;
+    font-size: 1em;
+    background: #5A5959;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+}

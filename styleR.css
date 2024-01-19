@@ -1,0 +1,145 @@
+*{
+    background: #E7EBEB;
+}
+
+header{
+    /*padding: 60px;
+    text-align: center;
+    color: white;
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;*/
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    bottom: 5em;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display:block;
+    font-size: 1em;
+    text-align: center;
+    color: #C69D04;
+    padding:1em 1em;
+    text-decoration: none;
+    background: black;
+    font-family:Arial;
+}
+
+li a:hover{
+    background-color:#C69D04;
+    color: black;
+}
+
+.carrito .c{
+    padding: 0;
+    margin: 1em;
+    float: right;
+    background: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-size: cover;
+    height: 100vh;
+}
+
+.Registro-box{
+    width: 33em;
+    height: 54em;
+    background: black;
+    color: #C69D04;
+    box-sizing: border-box;
+    border-radius: .5em;
+    margin: 2em auto;
+}
+
+form{
+    margin: 2em;
+}
+
+.Registro-box .logo{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.5em;
+    left: calc(50% - 2.5em);
+}
+
+.Registro-box h1{
+    padding: 2em 0 1em;
+    text-align: center;
+    font-size: 1.1em;
+    background: local;
+}
+
+.Registro-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    background: black;
+}
+
+.Registro-box input{
+    width: 100%;
+    margin-bottom: 3em;
+}
+
+.Registro-box input[type="text"],
+.Registro-box input[type="password"] {
+    border: none;
+    border-bottom: .05em solid #fff;
+    background: transparent;
+    outline: none;
+    height: 2em;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.Registro-box button{
+    border: none;
+    outline: none;
+    height: 3em;
+    width: 26em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: #C69D04;
+    font-size: 1.1em;
+    border-radius: 3.5em;
+    align-items: center;
+    color: black;
+}
+
+.Registro-box a{
+    text-decoration: none;
+    font-size: .6em;
+    line-height: 1em;
+    color: darkgray;
+    background: local;
+}
+
+form{
+    background-color: black;
+}
+
+footer{
+    height: 3em;
+    font-size: 1em;
+    background: #5A5959;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleA.css">
+    <title>Registros</title>
+</head>
+<body>
+    <header>
+        <nav>
+          <ul class="menu_horizontal">
+            <li>
+                <a href="#">Eliminar</a>
+                <ul class="menu_vertical">
+                    <li><a href="eliminar.html">Eliminar producto</a></li>
+                    <li><a href="eliminarU.html">Eliminar usuarios</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Agregar</a>
+                <ul class="menu_vertical">
+                    <li><a href="agregarP.html">Agregar producto</a></li>
+                    <li><a href="Registros.html">Agregar usuarios</a></li>
+                </ul>
+            </li>
+            <li><a href="salir.php">Salir</a></li>
+            <li><a href="bitacoras.php">Bitacoras</a></li>
+            <li><a href="logIn.html">LogIn</a></li>
+            <li><a href="Registros.html">Registros</a></li>
+            <li><a href="productosA.php">Productos</a></li>
+            <li><a href="index.html">Inicio</a></li>
+          </ul>  
+        </nav>
+        <a class="carrito" href="carrito.php"><img class="c" src="img\carrito.png" alt=""></a>
+    </header>
+
+    <div class="Registro-box">
+        <form action="http://localhost/postmortem/agregarL.php" method="post">
+                
+            <h1>Agregar producto</h1>
+    
+            <label for="nombre"> Nombre: </label>
+            <input type="text" name="nombre" id="nombre">
+                
+            <label for="precio"> Precio: </label>
+            <input type="text" name="precio" id="precio">
+    
+            <label for="sabor"> Sabor: </label>
+            <input type="text" name="sabor" id="sabor">
+    
+            <label for="cantidad"> Cantidad alcohol: </label>
+            <input type="text" name="cantidad" id="cantidad">
+    
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+    
+    <footer>
+        Josue Bonilla Cardenas | 4P <br> Desarrollo WEB  Base de datos
+    </footer>
+</body>
+</html>

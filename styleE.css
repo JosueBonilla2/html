@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #E7EBEB;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+    width:auto;
+    margin: auto;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+.menu_horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+.menu_horizontal li a{
+    display: block;
+    padding: .75em 1em;
+    background-color: #000000;
+    color:#C69D04;
+    text-decoration: none;
+}
+
+.menu_horizontal li a:hover{
+    background-color:#C69D04;
+    color: #000000;
+}
+
+.menu_vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 10em;
+    background-color: black;
+}
+
+.menu_horizontal li:hover .menu_vertical{
+    display: block;
+}
+
+.menu_vertical li:hover{
+    background-color: #C69D04;
+    color: #000000;
+}
+
+.menu_vertical li a{
+    display: block;
+    color: #C69D04;
+    padding: .75em .75em .75em 1em;
+    text-decoration: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-size: cover;
+    height: 100vh;
+}
+
+.login-box{
+    width: 20em;
+    height: 27em;
+    background: black;
+    color: #C69D04;
+    border-radius: .5em;
+    border-style: outset;
+    border-color: #C69D04;
+    box-sizing: border-box;
+    margin: 4em auto;
+}
+
+.login-box .logo{
+    width: 6em;
+    height: 6em;
+    border-radius: 50%;
+    position: absolute;
+    top: 4em;
+    left: calc(50% - 2.5em);
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 2.5em 0 .3em;
+    text-align: center;
+    font-size: 1.6em;
+    background: local;
+}
+
+.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    background: black;
+}
+
+.login-box input{
+    width: 100%;
+    margin-bottom: 2.5em;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: .05em solid #fff;
+    background: transparent;
+    outline: none;
+    height: 2em;
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.login-box button{
+    border: none;
+    outline: none;
+    height: 2em;
+    width: 13em;
+    margin-bottom: 1em;
+    background: #C69D04;
+    font-size: 0.9em;
+    border-radius: 3.5em;
+    align-items: center;
+    color: black;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: .8em;
+    line-height: 1em;
+    color: darkgray;
+    background: local;
+}
+
+form{
+    background-color: black;
+    margin: 2em;
+}
+
+footer{
+    height: 3em;
+    font-size: 1em;
+    background: #5A5959;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+}

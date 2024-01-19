@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #E7EBEB;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    bottom: 5em;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display:block;
+    font-size: 1em;
+    text-align: center;
+    color: #C69D04;
+    padding:1em 1em;
+    text-decoration: none;
+    background: black;
+    font-family:Arial;
+}
+
+li a:hover{
+    background-color:#C69D04;
+    color: black;
+}
+
+.carrito .c{
+    padding: 0;
+    margin: 1em;
+    float: right;
+    background: none;
+}
+
+h1{
+    margin: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #C69D04;
+    font-size: 2em;
+}
+
+.contenido{
+    display:flex;
+    flex-flow: row wrap;
+    max-width: 55em;
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+}
+
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mostrador .item{
+    background: white;
+    max-width: 10.5em;
+    padding: 1.5em;
+    height: 28em;
+    text-align: center;
+    margin: .5em 1.5em;
+    cursor: pointer;
+    border-radius: .25em;
+    transition: .3s;
+}
+
+.mostrador .item:hover{
+    background-color: #C69D04;
+}
+
+.mostrador .item img{
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+.mostrador .item .producto{
+    font-size: 1em;
+}
+
+.mostrador .item .descripcion{
+    color: #464d4d;
+    font-weight: bold;
+}
+
+.mostrador .item .cantidad{
+    color: #000000;
+    size: .25em;
+    font-weight: bold;
+}
+
+.mostrador .item .precio{
+    color: rgb(43, 43, 112);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.seleccion{
+    transition: .5s ease;
+    opacity: 0;
+    height: 0%;
+    width: 0%;
+    border: .10em solid #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cerrar p{
+    position: inherit;
+    color: black;
+    margin: 1em;
+    right: 1em;
+    top: 1em;
+    cursor: pointer;
+}
+
+.info{
+    padding: 1em;
+}
+
+.info img{
+    display: block;
+    margin: 1.5em;
+    width: 80%;
+}
+
+.info h2{
+    color: #C69D04;
+    margin-bottom: .5em;
+}
+
+.info p{
+    font-size: .75em;
+    color: #C69D04;
+    margin-bottom: .5em;
+}
+
+.info .precio{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: .5em;
+    display: block;
+}
+
+.info .fila{
+    display: flex;
+    align-items: flex-end;
+}
+
+.info .fila label{
+    display: flex;
+    margin-bottom: .5em;
+}
+
+.info .fila select{
+    width: 6em;
+    font-size: 1em;
+    padding: .25em;
+    margin-right: 1.5em;
+    cursor: pointer;
+}
+
+.info .boton{
+    height: 2em;
+    width: 100%;
+    border: #000000;
+    border-radius: .5em;
+    padding: 0 .5em;
+    color: black;
+    margin-bottom: 1em;
+    background-color: #C69D04;
+    cursor: pointer;
+}
+
+.mostrador .item .carrito{
+    height: 3em;
+    width: 100%;
+    border: #000000;
+    border-radius: .5em;
+    padding: 0 .5em;
+    color: #C69D04;
+    margin-top: 2em;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+footer{
+    height: 3em;
+    font-size: 1em;
+    background: #5A5959;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+}
+

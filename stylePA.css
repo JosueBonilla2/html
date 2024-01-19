@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #E7EBEB;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav{
+    max-width: 100%;
+    margin: auto;
+    font-size: 1em;
+}
+
+.menu_horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #000000;
+}
+
+.menu_horizontal li a{
+    display: block;
+    padding: .75em 1em;
+    background-color: #000000;
+    color:#C69D04;
+    text-decoration: none;
+}
+
+.menu_horizontal li a:hover{
+    background-color:#C69D04;
+    color: #000000;
+}
+
+.menu_vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 10em;
+    background-color: black;
+}
+
+.menu_horizontal li:hover .menu_vertical{
+    display: block;
+}
+
+.menu_vertical li:hover{
+    background-color: #C69D04;
+    color: #000000;
+}
+
+.menu_vertical li a{
+    display: block;
+    color: #C69D04;
+    padding: .75em .75em .75em 1em;
+    text-decoration: none;
+}
+
+h1{
+    margin: 1em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #C69D04;
+    font-size: 2em;
+}
+
+.contenido{
+    display:flex;
+    flex-flow: row wrap;
+    max-width: 55em;
+    width: 100%;
+    margin: 2em auto;
+    display: flex;
+}
+
+.mostrador{
+    width: 100%;
+    transition: .5s ease;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mostrador .item{
+    background: white;
+    max-width: 10.5em;
+    padding: 1.5em;
+    height: 28em;
+    text-align: center;
+    margin: .5em 1.5em;
+    cursor: pointer;
+    border-radius: .25em;
+    transition: .3s;
+}
+
+.mostrador .item:hover{
+    background-color: #C69D04;
+}
+
+.mostrador .item img{
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+.mostrador .item .producto{
+    font-size: 1em;
+}
+
+.mostrador .item .descripcion{
+    color: #464d4d;
+    font-weight: bold;
+}
+
+.mostrador .item .cantidad{
+    color: #000000;
+    size: .25em;
+    font-weight: bold;
+}
+
+.mostrador .item .precio{
+    color: rgb(43, 43, 112);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.mostrador .item .boton{
+    height: 2em;
+    width: 100%;
+    border: #000000;
+    border-radius: .5em;
+    padding: 0 .5em;
+    color: black;
+    margin-top: 3em;
+    background-color: #C69D04;
+    cursor: pointer;
+}
+
+.mostrador .item .boton:hover{
+    background-color: black;
+    color: #C69D04;
+}
+
+.seleccion{
+    transition: .5s ease;
+    opacity: 0;
+    height: 0%;
+    width: 0%;
+    border: .10em solid #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cerrar p{
+    position: inherit;
+    color: black;
+    margin: 1em;
+    right: 1em;
+    top: 1em;
+    cursor: pointer;
+}
+
+.info{
+    padding: 1em;
+}
+
+.info img{
+    display: block;
+    margin: 1.5em;
+    width: 80%;
+}
+
+.info h2{
+    color: #C69D04;
+    margin-bottom: .5em;
+}
+
+.info p{
+    font-size: .75em;
+    color: #C69D04;
+    margin-bottom: .5em;
+}
+
+.info .precio{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: .5em;
+    display: block;
+}
+
+.info .fila{
+    display: flex;
+    align-items: flex-end;
+}
+
+.info .fila label{
+    display: flex;
+    margin-bottom: .5em;
+}
+
+.info .fila select{
+    width: 6em;
+    font-size: 1em;
+    padding: .25em;
+    margin-right: 1.5em;
+    cursor: pointer;
+}
+
+.info .boton{
+    height: 2em;
+    width: 100%;
+    border: #000000;
+    border-radius: .5em;
+    padding: 0 .5em;
+    color: black;
+    margin-bottom: 1em;
+    background-color: #C69D04;
+    cursor: pointer;
+}
+
+.info .carrito{
+    height: 2em;
+    width: 100%;
+    border: #000000;
+    border-radius: .5em;
+    padding: 0 .5em;
+    color: #C69D04;
+    margin-bottom: 1em;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+footer{
+    height: 3em;
+    font-size: 1em;
+    background: #5A5959;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: white;
+}
