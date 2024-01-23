@@ -136,7 +136,7 @@ $webdavUrl = 'http://10.0.0.4';
 $webdavUsername = 'jos';
 $webdavPassword = '1234';
 
-$pdf->saveToWebDAV('Ticket.pdf', $webdavUrl, $webdavUsername, $webdavPassword);
+$pdf->saveToWebDAV($pdfFileName, $webdavUrl, $webdavUsername, $webdavPassword);
 
 require_once 'correo.php';
 
