@@ -128,7 +128,9 @@ $pdf->Cell(110, 10, 'PAGO', 1, 1, 'C', 1);
 $pdf->Cell(110, 10, 'Subtotal: MXN $' . $SubTotal, 1, 1, 'C');
 $pdf->Cell(110, 10, 'Total: MXN $' . $Total, 1, 1, 'C');
 
-$pdf->Output('Ticket.pdf', 'F');
+$pdfFileName = 'Ticket_' . time() . '.pdf';
+
+$pdf->Output($pdfFileName, 'F');
 
 $webdavUrl = 'http://10.0.0.4';
 $webdavUsername = 'jos';
