@@ -57,16 +57,17 @@ class PDF extends FPDF
         curl_setopt($ch, CURLOPT_POSTFIELDS, file_get_contents($pdfPath));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_USERPWD, "$webdavUsername:$webdavPassword");
-
         $result = curl_exec($ch);
-        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-
-        curl_close($ch);
-
-        if ($httpCode == 201) {
-            echo 'PDF subido exitosamente a WebDAV.';
+        if ($result === false) {
+            echo 'Error cURL: ' . curl_error($ch);
         } else {
-            echo "Error al subir el PDF a WebDAV. Código de estado: $httpCode";
+            $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        
+            if ($httpCode == 201) {
+                echo 'PDF subido exitosamente a WebDAV.';
+            } else {
+                echo "Error al subir el PDF a WebDAV. Código de estado: $httpCode";
+            }
         }
     }
 }
@@ -129,8 +130,8 @@ $pdf->Cell(110, 10, 'Total: MXN $' . $Total, 1, 1, 'C');
 
 $pdf->Output('Ticket.pdf', 'F');
 
-$webdavUrl = 'http://10.0.0.5';
-$webdavUsername = 'root';
+$webdavUrl = 'http://10.0.0.4';
+$webdavUsername = 'jos';
 $webdavPassword = '1234';
 
 $pdf->saveToWebDAV('Ticket.pdf', $webdavUrl, $webdavUsername, $webdavPassword);
