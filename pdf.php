@@ -142,7 +142,7 @@ require_once 'correo.php';
 
 try {
     mandar_correo('Ticket.pdf', $data['correo']);
-    header('Location: productos.php');
+    echo '<a href="http://www.webdavpostmortemshop.com.mx">Ver</a>';
 } catch (Exception $e) {
     echo "Error al enviar el correo electrónico de la compra: {$e->getMessage()}";
 }
